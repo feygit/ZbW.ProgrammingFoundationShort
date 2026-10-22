@@ -23,6 +23,16 @@ public static class TaschenrechnerLoesung
 
     Console.Write("Operation (+, -, *, /): ");
     string operation = (Console.ReadLine() ?? "").Trim();
+    Console.WriteLine("operation = " + operation);
+
+    /*
+    string opertation;
+    opertation = Console.ReadLine();
+    if(opertation != "")
+    {
+      opertation = opertation.Trim();
+    }
+    */
 
     double result;
 

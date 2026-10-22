@@ -25,25 +25,50 @@ public static class Taschenrechner
   public static void Start()
   {
     // TODO 1: Erste Zahl einlesen und prüfen
-    //         Console.Write("Erste Zahl: ");
-    //         if (!double.TryParse(Console.ReadLine() ?? "", out double zahl1))
-    //         {
-    //           Console.WriteLine("Ungültige Zahl.");
-    //           return;
-    //         }
+    Console.Write("Erste Zahl: ");
+    if (!double.TryParse(Console.ReadLine() ?? "", out double zahl1))
+    {
+      Console.WriteLine("Ungültige Zahl.");
+      return;
+    }
 
     // TODO 2: Zweite Zahl einlesen (gleiche Technik wie TODO 1)
+    Console.Write("Zweite Zahl: ");
+    if (!double.TryParse(Console.ReadLine() ?? "", out double zahl2))
+    {
+      Console.WriteLine("Ungültige Zahl.");
+      return;
+    }
 
     // TODO 3: Operation einlesen (+, -, *, /)
-    //         string operation = Console.ReadLine() ?? "";
+    Console.Write("Operation (+, -, *, /): ");
+    string operation = Console.ReadLine() ?? "";
 
     // TODO 4: Berechnen mit if / else if
-    //         if (operation == "+") { result = zahl1 + zahl2; }
-    //         else if (operation == "-") { ... }
-    //         ...
+    double result;
+    if (operation == "+") { result = zahl1 + zahl2; }
+    else if (operation == "-") { result = zahl1 - zahl2; }
+    else if (operation == "*") { result = zahl1 * zahl2; }
+    else if (operation == "-") { result = zahl1 - zahl2; }
+    else if (operation == "/")
+    {
+      if (zahl2 == 0)
+      {
+        Console.WriteLine("Fehler: Division durch 0 ist nicht erlaubt.");
+        return;
+      }
+
+      result = zahl1 / zahl2;
+    }
+    else
+    {
+      Console.WriteLine($"Unbekannte Operation: '{operation}'");
+      return;
+    }
     //         Achtung: Bei "/" zuerst prüfen, ob zahl2 == 0 ist!
     //         Unbekannte Operation → Meldung ausgeben
 
     // TODO 5: Ergebnis ausgeben: $"Ergebnis: {result:F2}"
+    Console.WriteLine($"Ergebnis: {result:F2}");
   }
 }
