@@ -16,9 +16,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modul1", "Modul1", "{721162D2-95FF-4E1E-B242-046DF81A3CFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BmiRechner", "..\Solutions\Modul1\WinFormsApp1\BmiRechner.csproj", "{AD106E7B-6EF7-4600-8308-A9501A1C7B5F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BmiRechner", "Solutions\Modul1\BmiRechner\BmiRechner.csproj", "{AD106E7B-6EF7-4600-8308-A9501A1C7B5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyCalculator", "ZbW.ProgrammingFoundationShort.Challenges\Module01\CurrencyCalculator\CurrencyCalculator.csproj", "{2EB2E7D8-C5E0-4181-9086-477C86493B50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyCalculator", "Solutions\Modul1\CurrencyCalculator\CurrencyCalculator.csproj", "{2EB2E7D8-C5E0-4181-9086-477C86493B50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
