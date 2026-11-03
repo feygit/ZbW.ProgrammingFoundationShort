@@ -31,7 +31,7 @@ internal static class Program
     // Application.Run(new ZbW.ProgrammingFoundationShort.Challenges.Module03.Aufgabe4_StatistikSimulator.StatistikSimulatorForm());
 
     // ---- Modul 04 ----
-    // Application.Run(new ZbW.ProgrammingFoundationShort.Challenges.Module04.Aufgabe1_TemperaturAuswertung.TemperaturAuswertungForm());
+     Application.Run(new ZbW.ProgrammingFoundationShort.Challenges.Module04.Aufgabe1_TemperaturAuswertung.TemperaturAuswertungForm());
     // Application.Run(new ZbW.ProgrammingFoundationShort.Challenges.Module04.Aufgabe2_Wortzaehler.WortzaehlerForm());
     // Application.Run(new ZbW.ProgrammingFoundationShort.Challenges.Module04.Aufgabe3_MatrizenRechner.MatrizenRechnerForm());
     // Application.Run(new ZbW.ProgrammingFoundationShort.Challenges.Module04.Aufgabe4_SortierVisualisierung.SortierVisualisierungForm());
