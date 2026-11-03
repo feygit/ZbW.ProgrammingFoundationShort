@@ -27,7 +27,9 @@ public static class PasswortValidator
       Console.WriteLine("Bitte Passwort zum prüfen eingeben");
       password = Console.ReadLine() ?? "";
 
+
       bool zifferEnthalten = false;
+
       foreach (char zeichen in password)
       {
         if (char.IsDigit(zeichen))
@@ -35,6 +37,18 @@ public static class PasswortValidator
           zifferEnthalten = true;
         }
       }
+      gueltig = password.Length >= 8 && zifferEnthalten;
+
+      if (password.Length < 8)
+      {
+        Console.WriteLine($"Bitte mindestens 8 zeichen");
+      }
+      if (!zifferEnthalten)
+      {
+        Console.WriteLine($"Mindestens eine Zahl eingeben");
+      }
     }
+    while (!gueltig);
+      Console.WriteLine("Passwort ist gültig!");
   }
 }
