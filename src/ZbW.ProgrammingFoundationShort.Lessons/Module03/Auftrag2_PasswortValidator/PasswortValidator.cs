@@ -1,3 +1,5 @@
+using System.DirectoryServices;
+
 namespace ZbW.ProgrammingFoundationShort.Lessons.Module03.Auftrag2_PasswortValidator;
 
 // ============================================================
@@ -18,14 +20,21 @@ public static class PasswortValidator
   {
     // TODO 1: string passwort; bool gueltig;
     //         do { ... } while (!gueltig);
+    string password;
+    bool gueltig;
+    do
+    {
+      Console.WriteLine("Bitte Passwort zum prüfen eingeben");
+      password = Console.ReadLine() ?? "";
 
-    // TODO 2: In der Schleife Passwort einlesen (Console.ReadLine() ?? "")
-
-    // TODO 3: bool hatZiffer = false;
-    //         foreach (char zeichen in passwort) → char.IsDigit(zeichen) prüfen
-
-    // TODO 4: gueltig berechnen und konkrete Fehlermeldung ausgeben
-
-    // TODO 5: Nach der Schleife Erfolgsmeldung ausgeben
+      bool zifferEnthalten = false;
+      foreach (char zeichen in password)
+      {
+        if (char.IsDigit(zeichen))
+        {
+          zifferEnthalten = true;
+        }
+      }
+    }
   }
 }
